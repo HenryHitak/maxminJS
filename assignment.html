@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Assignment Hitak Lee</title>
+</head>
+<body>
+    <h2 id="maximum"></h2>
+    <h2 id="minimum"></h2>
+</body>
+<script>
+    let marks = [20,50,10,40,80,90,75,65];
+    var max=0;
+    var min=100;
+    for(var index=0; index<marks.length; index++){
+        if(max<marks[index]){
+            max=marks[index];
+        }
+        if(min>marks[index]){
+            min=marks[index];
+        }
+    }
+    document.getElementById("maximum").innerHTML = "Maximum is: "+max;
+    document.getElementById("minimum").innerHTML = "Minimum is: "+min;
+</script>
+</html>
